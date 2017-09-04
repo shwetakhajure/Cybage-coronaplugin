@@ -1,7 +1,7 @@
 set -ve
 
 cd android
-./build.plugin.sh ~/Library/Android/sdk/
+./build.plugin.sh ~/Desktop/Android/sdk/
 cd ..
 cd ios
 ./build.plugin.sh
