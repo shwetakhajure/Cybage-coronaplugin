@@ -2,7 +2,7 @@
 <plist version="1.0">
 <dict>
     <key>method</key>
-    <string>ad-hoc</string>
+    <string>development</string>
     <key>teamID</key>
     <string>GTA9LK7P23</string>
 </dict>
