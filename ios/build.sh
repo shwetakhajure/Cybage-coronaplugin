@@ -25,6 +25,6 @@ rm Plugin/VungleAds.mm.bak
 
 xcodebuild -target VungleCoronaTest -project VungleCoronaTest.xcodeproj clean build OTHER_LDFLAGS="-all_load -ObjC -lz -lobjc -lsqlite3 -lc++"
 xcodebuild -project VungleCoronaTest.xcodeproj -scheme VungleCoronaTest OTHER_LDFLAGS="-all_load -ObjC -lz -lobjc -lsqlite3 -lc++" archive -archivePath ./VungleCoronaTest.xcarchive 
-xcodebuild -exportArchive -archivePath "./VungleCoronaTest.xcarchive/" -exportPath "./VungleCoronaTest.ipa" -exportOptionsPlist "./exportOptions.plist" -exportProvisioningProfile "Vungle Corona QA Test App"
+xcodebuild -exportArchive -archivePath "./VungleCoronaTest.xcarchive/" -exportPath "./VungleCoronaTest.ipa" -exportOptionsPlist "./exportOptions.plist" 
 
 #puck -api_token=d6cb4cec883a44a5a39a0ed21a845ff3 -app_id=a63c146c01e7fd8eeebe15fad3dfc269 -submit=auto -download=true -notify=false -open=nothing VungleCoronaTest.ipa
