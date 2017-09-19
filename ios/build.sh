@@ -23,7 +23,7 @@ rm Plugin/VungleAds.mm.bak
 
 [ -f ./VungleCoronaTest.ipa ] && rm ./VungleCoronaTest.ipa
 
-xcodebuild -target VungleCoronaTest -project VungleCoronaTest.xcodeproj clean build OTHER_LDFLAGS="-all_load -ObjC -lz -lobjc -lsqlite3 -lc++"
+xcodebuild -target VungleCoronaTest -project VungleCoronaTest.xcodeproj clean build ENABLE_BITCODE=NO OTHER_LDFLAGS="-all_load -ObjC -lz -lobjc -lsqlite3 -lc++"
 xcodebuild -project VungleCoronaTest.xcodeproj -scheme VungleCoronaTest archive -archivePath ./VungleCoronaTest.xcarchive
 xcodebuild -exportArchive -exportFormat ipa -archivePath "./VungleCoronaTest.xcarchive/" -exportPath "./VungleCoronaTest.ipa" -exportProvisioningProfile "Vungle In House Distribution"
 
