@@ -319,7 +319,7 @@
 				TargetAttributes = {
 					A484111815114F700074BD57 = {
 						DevelopmentTeam = GTA9LK7P23;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
