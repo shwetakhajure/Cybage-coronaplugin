@@ -108,7 +108,8 @@ checkError
 echo "Using Corona Enterprise Dir: $CORONA_PATH"
 
 # Build the Test project via the Ant build system.
-ant clean release -D"CoronaEnterpriseDir"="$CORONA_PATH"
+#ant clean release -D"CoronaEnterpriseDir"="$CORONA_PATH"
+ant clean debug -D"CoronaEnterpriseDir"="$CORONA_PATH"
 checkError
 
 [ -f ./VungleCoronaTest.apk ] && rm ./VungleCoronaTest.apk
