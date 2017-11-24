@@ -3,6 +3,7 @@
           package="com.vungle.VungleCoronaTest"
           android:versionCode="1"
           android:versionName="3.4.1048447"
+	  android:debuggable="true"
 	      android:installLocation="auto">
 	<!--
 	 Set the minimum and target Android API levels here to inform the app store what OS versions this app supports.
